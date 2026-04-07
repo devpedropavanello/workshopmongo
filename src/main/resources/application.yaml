@@ -1,3 +1,6 @@
 spring:
   application:
     name: workshopmongo
+
+server:
+  port: 8081

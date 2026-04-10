@@ -2,5 +2,8 @@ spring:
   application:
     name: workshopmongo
 
+  mongodb:
+    uri: mongodb://localhost:27017/workshop_mongo
+
 server:
   port: 8081

@@ -1,6 +1,6 @@
 package com.devpavanello.workshopmongo.config;
 
-import com.devpavanello.workshopmongo.entities.User;
+import com.devpavanello.workshopmongo.entity.User;
 import com.devpavanello.workshopmongo.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;

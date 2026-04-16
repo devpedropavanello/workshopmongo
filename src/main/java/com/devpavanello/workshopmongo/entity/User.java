@@ -1,4 +1,4 @@
-package com.devpavanello.workshopmongo.entities;
+package com.devpavanello.workshopmongo.entity;
 
 import lombok.*;
 import org.springframework.data.annotation.Id;

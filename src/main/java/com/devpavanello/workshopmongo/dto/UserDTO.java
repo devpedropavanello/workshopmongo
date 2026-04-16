@@ -1,6 +1,6 @@
 package com.devpavanello.workshopmongo.dto;
 
-import com.devpavanello.workshopmongo.entities.User;
+import com.devpavanello.workshopmongo.entity.User;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

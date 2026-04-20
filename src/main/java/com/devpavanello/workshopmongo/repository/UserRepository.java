@@ -1,5 +1,6 @@
 package com.devpavanello.workshopmongo.repository;
 
+
 import com.devpavanello.workshopmongo.entity.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;

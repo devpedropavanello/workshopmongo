@@ -1,6 +1,7 @@
 package com.devpavanello.workshopmongo.controller;
 
 import com.devpavanello.workshopmongo.dto.UserDTO;
+import com.devpavanello.workshopmongo.entity.Post;
 import com.devpavanello.workshopmongo.entity.User;
 import com.devpavanello.workshopmongo.service.UserService;
 import lombok.RequiredArgsConstructor;
@@ -24,6 +25,18 @@ public class UserResource {
         List<User> list = userService.findAll();
         List<UserDTO> listDTO = list.stream().map(x -> new UserDTO(x)).collect(Collectors.toList());
         return ResponseEntity.ok().body(listDTO);
+    }
+
+    @GetMapping(value = "/{id}")
+    public ResponseEntity<UserDTO> findById(@PathVariable String id) {
+        User obj = userService.findById(id);
+        return ResponseEntity.ok().body(new UserDTO(obj));
+    }
+
+    @GetMapping(value = "/{id}/posts")
+    public ResponseEntity<List<Post>> findPosts(@PathVariable String id) {
+        User obj = userService.findById(id);
+        return ResponseEntity.ok().body(obj.getPosts());
     }
 
     @DeleteMapping(value = "/{id}")

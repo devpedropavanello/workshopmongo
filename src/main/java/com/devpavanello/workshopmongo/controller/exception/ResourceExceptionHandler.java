@@ -1,6 +1,5 @@
 package com.devpavanello.workshopmongo.controller.exception;
 
-import com.devpavanello.workshopmongo.repository.UserRepository;
 import com.devpavanello.workshopmongo.service.exception.ObjectNotFoundException;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
